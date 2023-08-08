@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>timer</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500&family=Prata&display=swap"
+		rel="stylesheet">
+</head>
+
+<body>
+	<div class="bg">
+		<h1>Online StopWatch</h1>
+		<div class="timer">
+			<span id="timer">00:00</span>
+
+			<div class="btn">
+				<button id="stop" style="display: none;" onclick="stopTimer()">Stop</button>
+				<button id="restart" style="display: none;" onclick="restartTimer()">Restart</button>
+				<button id="start" onclick="startTimer()">Start</button>
+			</div>
+			<h2>Series</h2>
+			<span id="serie">0</span>
+			<div class="btn">
+				<button id='reset' onclick="flush()">Reset</button>
+			</div>
+		</div>
+	</div>
+	<script src="script.js"></script>
+</body>
+
+</html>
